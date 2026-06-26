@@ -11,3 +11,4 @@ Utilizamos **Kanban** através da aba Projects do GitHub, focando em entregas r�
 ## Como rodar e testar
 Instale o pytest: `pip install pytest`
 Rode os testes: `pytest tests/`
+Versão: 1.0.0
