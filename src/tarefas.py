@@ -3,7 +3,7 @@ class Tarefa:
         self.id = id
         self.descricao = descricao
         self.status = "A Fazer"
-        self.prioridade = prioridade # Mudança de escopo adicionada aqui!
+        self.prioridade = prioridade
 
 class GerenciadorDeTarefas:
     def __init__(self):
@@ -19,3 +19,10 @@ class GerenciadorDeTarefas:
                 t.status = "Concluido"
                 return True
         return False
+
+    def listar(self):
+        return self.tarefas
+
+    def remover(self, id):
+        self.tarefas = [t for t in self.tarefas if t.id != id]
+        return True
