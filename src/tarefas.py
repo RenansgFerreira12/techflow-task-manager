@@ -1,10 +1,11 @@
+# Classe modelo para as Tarefas
 class Tarefa:
     def __init__(self, id, descricao, prioridade="Normal"):
         self.id = id
         self.descricao = descricao
         self.status = "A Fazer"
         self.prioridade = prioridade
-
+# Classe principal do sistema
 class GerenciadorDeTarefas:
     def __init__(self):
         self.tarefas = []
